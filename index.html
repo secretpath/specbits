@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Parts Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="part" id="html-part">
+            <h2>HTML</h2>
+            <!-- Your HTML code goes here -->
+        </section>
+        <section class="part" id="css-part">
+            <h2>CSS</h2>
+            <!-- Your CSS code goes here -->
+        </section>
+        <section class="part" id="js-part">
+            <h2>JavaScript</h2>
+            <!-- Your JavaScript code goes here -->
+        </section>
+    </div>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.part {
+    flex-basis: 30%;
+    padding: 20px;
+}
+
+/* Styling for different sections */
+#html-part {
+    background-color: #f5d7a7;
+}
+
+#css-part {
+    background-color: #aed7e4;
+}
+
+#js-part {
+    background-color: #c9e4a8;
+}
+
+/* Media Queries for Tablet and Mobile */
+@media screen and (max-width: 768px) {
+    .part {
+        flex-basis: 100%;
+    }
+}
+
+</style>
